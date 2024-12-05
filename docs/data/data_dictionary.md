@@ -2,10 +2,10 @@
 
 ## Base de datos. Aplicación a crédito.
 
-**Tabla de datos socioeconomicos de cada cliente que solicita el crédito. Colección de aproximadamente 438000 datos.
+** Tabla de datos socioeconomicos de cada cliente que solicita el crédito. Colección de aproximadamente 438000 datos.
 
 | Variable | Descripción | Tipo de dato | Rango/Valores posibles |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | ID | Código único de cliente usado como identificador entre bases de datos | Entero | [0 - 9999999] |
 | CODE_GENDER | Valor que define el sexo de cada cliente | Caracter | M / F |
 | FLAG_OWN_CAR | Valor que define la propiedad de un automovil al cliente | Booleano | Y / N |
@@ -32,9 +32,9 @@
 
 ## Base de datos 2. Seguimiento de mora en créditos
 
-**Tabla de datos asociados a mora en créditos del cliente, se muestra sus status respecto al pago y el mes en que fue obtenida la información
+** Tabla de datos asociados a mora en créditos del cliente, se muestra sus status respecto al pago y el mes en que fue obtenida la información
 
-| Variable | Descripción | Tipo de dato | Rango/Valores posibles | Fuente de datos |
+| Variable | Descripción | Tipo de dato | Rango/Valores posibles |
 | --- | --- | --- | --- | --- |
 | ID | Código único de cliente usado como identificador entre bases de datos | Entero | [0 - 9999999] |
 | MONTHS_BALANCE | Mes del que se extrajo la información, siendo el mes 0 la actualidad | Entero | [-60 - 0] |
