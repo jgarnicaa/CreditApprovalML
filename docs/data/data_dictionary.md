@@ -1,5 +1,8 @@
 # Diccionario de datos
 
+### Fuente de los datos: 
+	- https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction/data
+
 ## Base de datos. Aplicación a crédito.
 
 ** Tabla de datos socioeconomicos de cada cliente que solicita el crédito. Colección de aproximadamente 438000 datos.
