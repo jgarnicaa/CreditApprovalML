@@ -29,7 +29,7 @@
 ** Tabla de datos asociados a mora en créditos del cliente, se muestra sus status respecto al pago y el mes en que fue obtenida la información
 
 | Variable | Descripción | Tipo de dato | Rango/Valores posibles |
-| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- |
 | ID | Código único de cliente usado como identificador entre bases de datos | Entero | [0 - 9999999] |
 | MONTHS_BALANCE | Mes del que se extrajo la información, siendo el mes 0 la actualidad | Entero | [-60 - 0] |
 | STATUS | Variable que clasifica la cantidad de mora respecto al crédito*| Caracter| ['X' 'C' '0' '1' '2' '3' '4' '5'] 
