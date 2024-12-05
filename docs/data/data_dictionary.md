@@ -13,21 +13,15 @@
 | CNT_CHILDREN | Cantidad de hijos por persona | Entero | [0 - 19] |
 | AMT_INCOME_TOTAL | Ingreso anual del cliente | Flotante 1 decimal | [0 - 9999999.9] |
 | NAME_INCOME_TYPE | Categoria del ingreso del cliente | Cadena de texto | ['Working' 'Commercial associate' 'Pensioner' 'State servant' 'Student'] |
-| NAME_EDUCATION_TYPE | Status de educación más alto | Cadena de texto | ['Higher education' 'Secondary / secondary special' 'Incomplete higher'
- 'Lower secondary' 'Academic degree'] |
+| NAME_EDUCATION_TYPE | Status de educación más alto | Cadena de texto | ['Higher education' 'Secondary / secondary special' 'Incomplete higher' 'Lower secondary' 'Academic degree'] |
 | NAME_FAMILY_STATUS | Situación civil del cliente | Cadena de texto | ['Civil marriage' 'Married' 'Single / not married' 'Separated' 'Widow'] |
-| NAME_HOUSING_TYPE | Tipo de vivienda del cliente | Cadena de texto | ['Rented apartment' 'House / apartment' 'Municipal apartment'
- 'With parents' 'Co-op apartment' 'Office apartment'] |
+| NAME_HOUSING_TYPE | Tipo de vivienda del cliente | Cadena de texto | ['Rented apartment' 'House / apartment' 'Municipal apartment' 'With parents' 'Co-op apartment' 'Office apartment'] |
 | DAYS_BIRTH | Cantidad de días desde el nacimiento del cliente | Entero | [-25201 - -7489] |
 | DAYS_EMPLOYED | Cantidad de días que el cliente tiene empleo  (si es positiva está desempleado) | Entero | [-17531 - 1000] |
 | FLAG_MOBIL | Valor para definir posesión de celular | Booleano | 1 / 0 |
 | FLAG_WORK_PHONE | Valor para definir posesión de telefono en el trabajo | Booleano | 1 / 0 |
 | FLAG_PHONE | Valor para definir posesión de telefono fijo |  Booleano | 1 / 0 |
-| OCCUPATION_TYPE | Ocupación del cliente | Cadena de texto | ['nan' 'Security staff' 'Sales staff' 'Accountants' 'Laborers' 'Managers'
- 'Drivers' 'Core staff' 'High skill tech staff' 'Cleaning staff'
- 'Private service staff' 'Cooking staff' 'Low-skill Laborers'
- 'Medicine staff' 'Secretaries' 'Waiters/barmen staff' 'HR staff'
- 'Realty agents' 'IT staff'] |
+| OCCUPATION_TYPE | Ocupación del cliente | Cadena de texto | ['nan' 'Security staff' 'Sales staff' 'Accountants' 'Laborers' 'Managers' 'Drivers' 'Core staff' 'High skill tech staff' 'Cleaning staff' 'Private service staff' 'Cooking staff' 'Low-skill Laborers' 'Medicine staff' 'Secretaries' 'Waiters/barmen staff' 'HR staff' 'Realty agents' 'IT staff'] |
 | CNT_FAM_MEMBERS | Tamaño del núcleo familiar del cliente | Entero | [1 - 20] |
 
 ## Base de datos 2. Seguimiento de mora en créditos
