@@ -2,24 +2,15 @@
 
 ## Origen de los datos
 
-- [ ] Especificar la fuente de los datos y la forma en que se obtuvieron. 
+- Los datos se obtuvieron del conjunto [Credit Card Approval Prediction](https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction/data) disponible en *Kaggle*.
 
 ## Especificación de los scripts para la carga de datos
 
-- [ ] Especificar los scripts utilizados para la carga de los datos. 
+- Los datos se descargaron en formato `csv` y se cargaron con `Pandas` en el notebok de Python [Data_acquisition](https://github.com/jgarnicaa/CreditApprovalML/blob/main/scripts/data_acquisition/Data_acquisition.ipynb).
 
 ## Referencias a rutas o bases de datos origen y destino
 
-- [ ] Especificar las rutas o bases de datos de origen y destino para los datos.
-
 ### Rutas de origen de datos
 
-- [ ] Especificar la ubicación de los archivos de origen de los datos.
-- [ ] Especificar la estructura de los archivos de origen de los datos.
-- [ ] Describir los procedimientos de transformación y limpieza de los datos.
-
-### Base de datos de destino
-
-- [ ] Especificar la base de datos de destino para los datos.
-- [ ] Especificar la estructura de la base de datos de destino.
-- [ ] Describir los procedimientos de carga y transformación de los datos en la base de datos de destino.
+- En este repositorio, los datos se encuentran en [scripts/data_acquisition](https://github.com/jgarnicaa/CreditApprovalML/tree/main/scripts/data_acquisition).
+- Los datos están separados en dos tablas: Una con la [información socioeconómica](https://github.com/jgarnicaa/CreditApprovalML/blob/main/scripts/data_acquisition/application_record.csv) de cada cliente y otra con sus [estados de mora](https://github.com/jgarnicaa/CreditApprovalML/blob/main/scripts/data_acquisition/credit_record.csv) en otros créditos.
