@@ -11,5 +11,5 @@ Esta plantilla proporciona las siguientes carpetas y archivos:
   
 # CreditApprovalML
 
-Para esta primera entrega se trabajó sobre la carpeta "scripts/data_acquisition" allí se encuentra un notebook con la importación de los datos y una exploración inicial.
-Además se trabajó sobre la carpeta "docs/business_understading" en la cual se modificó el archivo correspondiente para comentar el entendimiento del negocio.
+Para esta segunda entrega se trabajó sobre la carpeta "scripts/eda" allí se encuentran notebooks con la importación de los datos, una exploración inicial y un primer preprocesamiento para transformar los datos numéricos.
+Además se trabajó sobre la carpeta "docs/data" en la cual se modificó el archivo correspondiente para comentar los tipos de datos que se tienen.
