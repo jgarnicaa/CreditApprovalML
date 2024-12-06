@@ -6,7 +6,7 @@ El conjunto de datos cuenta con un total de $438557$ observaciones. Se tienen $1
 
 ## Resumen de calidad de los datos
 
-Hay $134203$ valores faltantes, lo cual representa cerca del $31\%$ de las filas de la tabla `application_record`. Se trata del atributo de la ocupación del cliente, por lo que sí será un dato importante para las predicciones. Por eso, en la limpieza se deben reemplazar o rellenar dichos valores.
+Hay $134203$ valores faltantes, lo cual representa cerca del $31%$ de las filas de la tabla `application_record`. Se trata del atributo de la ocupación del cliente, por lo que sí será un dato importante para las predicciones. Por eso, en la limpieza se deben reemplazar o rellenar dichos valores.
 
 ## Variable objetivo
 
