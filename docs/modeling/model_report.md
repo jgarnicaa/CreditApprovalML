@@ -17,6 +17,7 @@
 - El rendimiento del modelo se evaluó por medio del `accuracy`, el cual tuvo un valor de $0.9906$ con los datos de prueba. La matriz de confusión se puede ver a continuación, en donde se identificó que hubo más falsos positivos que negativos, pero este modelo es bastante consistente con la clasificación de perfiles.
 
 |   | 0 | 1 |
+| --- | --- | --- |
 | 0 | 10715 | 191 |
 | 1 | 14 | 10891 |
 
