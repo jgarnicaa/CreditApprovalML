@@ -2,24 +2,32 @@
 
 ## Resumen Ejecutivo
 
-En esta sección se presentará un resumen de los resultados obtenidos del modelo final. Es importante incluir los resultados de las métricas de evaluación y la interpretación de los mismos.
+- Por medio de un bosque aleatorio con $100$ árboles de regresión, se obtuvo un valor de $0.9906$ para el `accuracy` de los datos de prueba.
 
 ## Descripción del Problema
 
-En esta sección se describirá el problema que se buscó resolver con el modelo final. Se debe incluir una descripción detallada del problema, el contexto en el que se desarrolla, los objetivos que se persiguen y la justificación del modelo.
+- El objetivo principal del caso es predecir si un solicitante de tarjeta de crédito es un cliente "bueno" o "malo" con base en datos históricos de su perfil. Lo anterior corresponde a un problema de clasificación, y es por eso que se entrenó un modelo de bosque aleatorio para separar los perfiles entre dos categorías.
 
 ## Descripción del Modelo
 
-En esta sección se describirá el modelo final que se desarrolló para resolver el problema planteado. Se debe incluir una descripción detallada del modelo, la metodología utilizada y las técnicas empleadas.
+- Para el modelo final se utilizó un bosque aleatorio para clasificación. Cabe resaltar que los hiperparámetros se seleccionaron de entre veinte combinaciones aleatorias, y la mejor combinación encontrada incluye $100$ árboles de clasificación con una profundidad máxima de $16$.
 
 ## Evaluación del Modelo
 
-En esta sección se presentará una evaluación detallada del modelo final. Se deben incluir las métricas de evaluación que se utilizaron y una interpretación detallada de los resultados.
+- El rendimiento del modelo se evaluó por medio del `accuracy`, el cual tuvo un valor de $0.9906$ con los datos de prueba. La matriz de confusión se puede ver a continuación, en donde se identificó que hubo más falsos positivos que negativos, pero este modelo es bastante consistente con la clasificación de perfiles.
+
+|   | 0 | 1 |
+| 0 | 10715 | 191 |
+| 1 | 14 | 10891 |
 
 ## Conclusiones y Recomendaciones
 
-En esta sección se presentarán las conclusiones y recomendaciones a partir de los resultados obtenidos. Se deben incluir los puntos fuertes y débiles del modelo, las limitaciones y los posibles escenarios de aplicación.
+- El rendimiento del último modelo fue bastante satisfactorio, teniendo en cuenta la métrica utilizada.
 
 ## Referencias
 
-En esta sección se deben incluir las referencias bibliográficas y fuentes de información utilizadas en el desarrollo del modelo.
+- [Pandas](https://pandas.pydata.org/)
+- [Scikit-learn](https://scikit-learn.org/stable/)
+- [Matplotlib - Pyplot](https://matplotlib.org/stable/tutorials/pyplot.html)
+- [Imbalanced-learn](https://imbalanced-learn.org/stable/)
+- [Seaborn](https://seaborn.pydata.org/) 

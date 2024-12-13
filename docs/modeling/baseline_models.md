@@ -1,24 +1,38 @@
 # Reporte del Modelo Baseline
 
-Este documento contiene los resultados del modelo baseline.
-
 ## Descripción del modelo
 
-El modelo baseline es el primer modelo construido y se utiliza para establecer una línea base para el rendimiento de los modelos posteriores.
+- En este caso se entrenó una máquina de soporte vectorial para clasificación.
 
 ## Variables de entrada
 
-Lista de las variables de entrada utilizadas en el modelo.
+- CODE_GENDER
+- FLAG_OWN_CAR
+- FLAG_OWN_REALTY
+- CNT_CHILDREN
+- AMT_INCOME_TOTAL
+- NAME_INCOME_TYPE
+- NAME_EDUCATION_TYPE
+- NAME_FAMILY_STATUS
+- NAME_HOUSING_TYPE
+- DAYS_BIRTH
+- DAYS_EMPLOYED
+- FLAG_MOBIL
+- FLAG_WORK_PHONE
+- FLAG_PHONE
+- FLAG_EMAIL
+- OCCUPATION_TYPE
+- CNT_FAM_MEMBERS
 
 ## Variable objetivo
 
-Nombre de la variable objetivo utilizada en el modelo.
+- target
 
 ## Evaluación del modelo
 
 ### Métricas de evaluación
 
-Descripción de las métricas utilizadas para evaluar el rendimiento del modelo.
+- El rendimiento del modelo se evaluó por medio del `accuracy`, es decir, la fracción de aciertos que obtuvo el modelo al intentar clasificar los perfiles de los clientes.
 
 ### Resultados de evaluación
 
@@ -34,6 +48,8 @@ Conclusiones generales sobre el rendimiento del modelo baseline y posibles área
 
 ## Referencias
 
-Lista de referencias utilizadas para construir el modelo baseline y evaluar su rendimiento.
-
-Espero que te sea útil esta plantilla. Recuerda que puedes adaptarla a las necesidades específicas de tu proyecto.
+- [Pandas](https://pandas.pydata.org/)
+- [Scikit-learn](https://scikit-learn.org/stable/)
+- [Matplotlib - Pyplot](https://matplotlib.org/stable/tutorials/pyplot.html)
+- [Imbalanced-learn](https://imbalanced-learn.org/stable/)
+- [Seaborn](https://seaborn.pydata.org/)
