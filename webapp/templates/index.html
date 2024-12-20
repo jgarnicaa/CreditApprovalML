@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Get credit approval</h1>
-    <form action="/approval">
+    <form action="/approval" method="post">
                 <!-- Dropdowns for limited options -->
                 <label for="code_gender">CODE_GENDER:</label>
                 <select id="code_gender" name="code_gender">
@@ -81,6 +81,9 @@
                 <!-- Text inputs for larger ranges -->
                 <label for="days_birth">DAYS_BIRTH:</label>
                 <input type="number" id="days_birth" name="days_birth"><br><br>
+
+                <label for="AMT_INCOME_TOTAL">AMT_INCOME_TOTAL:</label>
+                <input type="number" id="AMT_INCOME_TOTAL" name="AMT_INCOME_TOTAL"><br><br>
         
                 <label for="days_employed">DAYS_EMPLOYED:</label>
                 <input type="number" id="days_employed" name="days_employed"><br><br>
