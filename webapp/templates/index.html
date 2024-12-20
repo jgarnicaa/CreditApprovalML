@@ -3,153 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get credit approval</title>
-    <link href="{{url_for('static', filename='styles/style.css')}}" rel="stylesheet" />
+    <title>Get Credit Approval</title>
+    <link href="{{ url_for('static', filename='styles/style.css') }}" rel="stylesheet" />
 </head>
 <body>
-    <h1>Get credit approval</h1>
-    <form action="/approval" method="post">
-                <!-- Dropdowns for limited options -->
-                <label for="code_gender">CODE_GENDER:</label>
-                <select id="code_gender" name="code_gender">
-                    <option value="1">M</option>
-                    <option value="0">F</option>
-                </select><br><br>
-        
-                <label for="flag_own_car">FLAG_OWN_CAR:</label>
-                <select id="flag_own_car" name="flag_own_car">
-                    <option value="1">Y</option>
-                    <option value="0">N</option>
-                </select><br><br>
-        
-                <label for="flag_own_realty">FLAG_OWN_REALTY:</label>
-                <select id="flag_own_realty" name="flag_own_realty">
-                    <option value="1">Y</option>
-                    <option value="0">N</option>
-                </select><br><br>
-        
-                <label for="cnt_children">CNT_CHILDREN:</label>
-                <select id="cnt_children" name="cnt_children">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="3">3</option>
-                    <option value="2">2</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="14">14</option>
-                    <option value="19">19</option>
-                    <option value="7">7</option>
-                </select><br><br>
-        
-                <label for="name_income_type">NAME_INCOME_TYPE:</label>
-                <select id="name_income_type" name="name_income_type">
-                    <option value="4">Working</option>
-                    <option value="0">Commercial associate</option>
-                    <option value="1">Pensioner</option>
-                    <option value="2">State servant</option>
-                    <option value="3">Student</option>
-                </select><br><br>
-        
-                <label for="name_education_type">NAME_EDUCATION_TYPE:</label>
-                <select id="name_education_type" name="name_education_type">
-                    <option value="1">Higher education</option>
-                    <option value="4">Secondary</option>
-                    <option value="2">Incomplete higher</option>
-                    <option value="3">Lower secondary</option>
-                    <option value="0">Academic degree</option>
-                </select><br><br>
-        
-                <label for="name_family_status">NAME_FAMILY_STATUS:</label>
-                <select id="name_family_status" name="name_family_status">
-                    <option value="0">Civil marriage</option>
-                    <option value="1">Married</option>
-                    <option value="3">Single</option>
-                    <option value="2">Separated</option>
-                    <option value="4">Widow</option>
-                </select><br><br>
-        
-                <label for="name_housing_type">NAME_HOUSING_TYPE:</label>
-                <select id="name_housing_type" name="name_housing_type">
-                    <option value="4">Rented apartment</option>
-                    <option value="1">House / apartment</option>
-                    <option value="2">Municipal apartment</option>
-                    <option value="5">With parents</option>
-                    <option value="0">Co-op apartment</option>
-                    <option value="3">Office apartment</option>
-                </select><br><br>
-        
-                <!-- Text inputs for larger ranges -->
-                <label for="days_birth">DAYS_BIRTH:</label>
-                <input type="number" id="days_birth" name="days_birth"><br><br>
+    <h1>Get Credit Approval</h1>
+    <form action="/result" method="post">
+        <!-- Dropdowns for limited options -->
+        <label for="code_gender">CODE_GENDER:</label>
+        <select id="code_gender" name="code_gender" required>
+            <option value="1">M</option>
+            <option value="0">F</option>
+        </select><br><br>
 
-                <label for="AMT_INCOME_TOTAL">AMT_INCOME_TOTAL:</label>
-                <input type="number" id="AMT_INCOME_TOTAL" name="AMT_INCOME_TOTAL"><br><br>
-        
-                <label for="days_employed">DAYS_EMPLOYED:</label>
-                <input type="number" id="days_employed" name="days_employed"><br><br>
-        
-                <!-- Other options -->
-                <label for="flag_mobil">FLAG_MOBIL:</label>
-                <select id="flag_mobil" name="flag_mobil">
-                    <option value="1">True</option>
-                </select><br><br>
-        
-                <label for="flag_work_phone">FLAG_WORK_PHONE:</label>
-                <select id="flag_work_phone" name="flag_work_phone">
-                    <option value="1">True</option>
-                    <option value="0">False</option>
-                </select><br><br>
-        
-                <label for="flag_phone">FLAG_PHONE:</label>
-                <select id="flag_phone" name="flag_phone">
-                    <option value="0">False</option>
-                    <option value="1">True</option>
-                </select><br><br>
-        
-                <label for="flag_email">FLAG_EMAIL:</label>
-                <select id="flag_email" name="flag_email">
-                    <option value="0">False</option>
-                    <option value="1">True</option>
-                </select><br><br>
-        
-                <label for="occupation_type">OCCUPATION_TYPE:</label>
-                <select id="occupation_type" name="occupation_type">
-                    <option value="17">N/A</option>
-                    <option value="16">Security staff</option>
-                    <option value="14">Sales staff</option>
-                    <option value="0">Accountants</option>
-                    <option value="8">Laborers</option>
-                    <option value="10">Managers</option>
-                    <option value="4">Drivers</option>
-                    <option value="3">Core staff</option>
-                    <option value="6">High skill tech staff</option>
-                    <option value="1">Cleaning staff</option>
-                    <option value="12">Private service staff</option>
-                    <option value="2">Cooking staff</option>
-                    <option value="9">Low-skill Laborers</option>
-                    <option value="11">Medicine staff</option>
-                    <option value="15">Secretaries</option>
-                    <option value="18">Waiters/barmen staff</option>
-                    <option value="5">HR staff</option>
-                    <option value="13">Realty agents</option>
-                    <option value="7">IT staff</option>
-                </select><br><br>
-        
-                <label for="cnt_fam_members">CNT_FAM_MEMBERS:</label>
-                <select id="cnt_fam_members" name="cnt_fam_members">
-                    <option value="2">2</option>
-                    <option value="1">1</option>
-                    <option value="5">5</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="6">6</option>
-                    <option value="15">15</option>
-                    <option value="7">7</option>
-                    <option value="20">20</option>
-                    <option value="9">9</option>
-                </select><br><br>
-        
-                <button type="submit">Submit</button>
+        <label for="flag_own_car">FLAG_OWN_CAR:</label>
+        <select id="flag_own_car" name="flag_own_car" required>
+            <option value="1">Y</option>
+            <option value="0">N</option>
+        </select><br><br>
+
+        <label for="flag_own_realty">FLAG_OWN_REALTY:</label>
+        <select id="flag_own_realty" name="flag_own_realty" required>
+            <option value="1">Y</option>
+            <option value="0">N</option>
+        </select><br><br>
+
+        <label for="cnt_children">CNT_CHILDREN:</label>
+        <select id="cnt_children" name="cnt_children" required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="14">14</option>
+            <option value="19">19</option>
+            <option value="7">7</option>
+        </select><br><br>
+
+        <label for="name_income_type">NAME_INCOME_TYPE:</label>
+        <select id="name_income_type" name="name_income_type" required>
+            <option value="4">Working</option>
+            <option value="0">Commercial associate</option>
+            <option value="1">Pensioner</option>
+            <option value="2">State servant</option>
+            <option value="3">Student</option>
+        </select><br><br>
+
+        <label for="name_education_type">NAME_EDUCATION_TYPE:</label>
+        <select id="name_education_type" name="name_education_type" required>
+            <option value="1">Higher education</option>
+            <option value="4">Secondary</option>
+            <option value="2">Incomplete higher</option>
+            <option value="3">Lower secondary</option>
+            <option value="0">Academic degree</option>
+        </select><br><br>
+
+        <label for="name_family_status">NAME_FAMILY_STATUS:</label>
+        <select id="name_family_status" name="name_family_status" required>
+            <option value="0">Civil marriage</option>
+            <option value="1">Married</option>
+            <option value="3">Single</option>
+            <option value="2">Separated</option>
+            <option value="4">Widow</option>
+        </select><br><br>
+
+        <label for="name_housing_type">NAME_HOUSING_TYPE:</label>
+        <select id="name_housing_type" name="name_housing_type" required>
+            <option value="4">Rented apartment</option>
+            <option value="1">House / apartment</option>
+            <option value="2">Municipal apartment</option>
+            <option value="5">With parents</option>
+            <option value="0">Co-op apartment</option>
+            <option value="3">Office apartment</option>
+        </select><br><br>
+
+        <!-- Text inputs for larger ranges -->
+        <label for="days_birth">DAYS_BIRTH:</label>
+        <input type="number" id="days_birth" name="days_birth" required min="-30000" max="0"><br><br>
+
+        <label for="AMT_INCOME_TOTAL">AMT_INCOME_TOTAL:</label>
+        <input type="number" id="AMT_INCOME_TOTAL" name="AMT_INCOME_TOTAL" required min="0"><br><br>
+
+        <label for="days_employed">DAYS_EMPLOYED:</label>
+        <input type="number" id="days_employed" name="days_employed" required min="-30000" max="0"><br><br>
+
+        <!-- Other options -->
+        <label for="flag_mobil">FLAG_MOBIL:</label>
+        <select id="flag_mobil" name="flag_mobil" required>
+            <option value="1">True</option>
+        </select><br><br>
+
+        <label for="flag_work_phone">FLAG_WORK_PHONE:</label>
+        <select id="flag_work_phone" name="flag_work_phone" required>
+            <option value="1">True</option>
+            <option value="0">False</option>
+        </select><br><br>
+
+        <label for="flag_phone">FLAG_PHONE:</label>
+        <select id="flag_phone" name="flag_phone" required>
+            <option value="0">False</option>
+            <option value="1">True</option>
+        </select><br><br>
+
+        <label for="flag_email">FLAG_EMAIL:</label>
+        <select id="flag_email" name="flag_email" required>
+            <option value="0">False</option>
+            <option value="1">True</option>
+        </select><br><br>
+
+        <label for="occupation_type">OCCUPATION_TYPE:</label>
+        <select id="occupation_type" name="occupation_type" required>
+            <option value="17">N/A</option>
+            <option value="16">Security staff</option>
+            <option value="14">Sales staff</option>
+            <option value="0">Accountants</option>
+            <option value="8">Laborers</option>
+            <option value="10">Managers</option>
+            <option value="4">Drivers</option>
+            <option value="3">Core staff</option>
+            <option value="6">High skill tech staff</option>
+            <option value="1">Cleaning staff</option>
+            <option value="12">Private service staff</option>
+            <option value="2">Cooking staff</option>
+            <option value="9">Low-skill Laborers</option>
+            <option value="11">Medicine staff</option>
+            <option value="15">Secretaries</option>
+            <option value="18">Waiters/barmen staff</option>
+            <option value="5">HR staff</option>
+            <option value="13">Realty agents</option>
+            <option value="7">IT staff</option>
+        </select><br><br>
+
+        <label for="cnt_fam_members">CNT_FAM_MEMBERS:</label>
+        <select id="cnt_fam_members" name="cnt_fam_members" required>
+            <option value="2">2</option>
+            <option value="1">1</option>
+            <option value="5">5</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="15">15</option>
+            <option value="7">7</option>
+            <option value="20">20</option>
+            <option value="9">9</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
